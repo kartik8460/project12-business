@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #636c79;
+}
+
+nav {
+    padding: 50px 100px;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.nav-list {
+    float: right;
+}
+
+.nav-list ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav-list-item {
+    color: #FFFFFF;
+    display: inline;
+    margin: 0 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-btn {
+    padding: 10px 40px;
+    border: 1px solid #797d85;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 60px;
+}
+
+.header-section {
+    padding: 0 300px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image {
+    display: inline-block;
+}
+
+.header-content {
+    margin-left: 100px;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    color: #FFFFFF;
+}
+
+.header-content p{
+    font-size: 22px;
+    color: #d0d2d6;
+    margin: 30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.email-container {
+    padding: 10px 10px 10px 20px;
+    background-color: #FFFFFF;
+    width: 700px;
+}
+
+.email-container img {
+    vertical-align: middle;
+}
+
+.email-container input {
+    outline: none;
+    border: none;
+    width: 300px;
+}
+
+.email-container input::placeholder {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.btn {
+    padding: 20px 40px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #8bb7a2;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.email-container .btn {
+    margin-left: 200px;
+}
+
+.section {
+    padding: 75px 300px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.figures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 200px;
+}
+
+.figure h2, .figure p {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.figure h2 {
+    font-size: 40px;
+}
+
+.analytics-image img {
+    width: 100%;
+}
+
+.solution {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px 0;
+}
+
+.solution div {
+    width: 50%;
+}
+
+.solution div:last-child {
+    padding-left: 50px;
+}
+
+.solution-content h2 {
+    font-size: 50px;
+}
+
+.solution-content p {
+    font-size: 25px;
+    margin: 25px 0 40px 0;
+}
+
+.solution-image img{
+    width: 100%;
+}
+
+.team-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 ;
+}
+
+.team-heading h1 {
+    font-size: 50px;
+}
+
+.team-heading p {
+    line-height: 35px;
+    color: #636c79;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.team-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 75px;
+}
+
+.team-card h3 {
+    margin: 20px 0;
+}
+
+.image img{
+    height: 500px;
+}
+
+.team-action {
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer {
+    background-color: #10181d;
+}
+
+.social-media {
+    float: right;
+}
+
+.upper-footer {
+    height: 100px;
+    border-bottom: 1px solid #2b3338;
+}
+
+
+.footer-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 0;
+}
+
+.footer-list h4 {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.footer-list ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.item {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.item:hover {
+    font-weight: 600;
+}
