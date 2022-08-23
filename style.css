@@ -5,20 +5,37 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.max-w {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.my-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 header {
     background-color: #636c79;
+    display: block;
 }
 
-nav {
-    padding: 50px 100px;
+.navbar {
+    width: 100%;
+    height: 120px;
 }
 
-.logo {
+.navbar .logo {
     display: inline-block;
+    margin-top: 50px;
 }
 
 .nav-list {
     float: right;
+    margin-top: 25px;
 }
 
 .nav-list ul {
@@ -29,7 +46,7 @@ nav {
 .nav-list-item {
     color: #FFFFFF;
     display: inline;
-    margin: 0 30px;
+    margin: 0 20px;
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
@@ -42,27 +59,29 @@ nav {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 .header-section {
-    padding: 0 300px 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.header-image {
-    display: inline-block;
+.header-image img {
+    width: 500px;
+    max-width: 100%;
 }
 
 .header-content {
-    margin-left: 100px;
+    margin-left: 75px;
+    flex-basis: 35%;
+    margin-bottom: 50px;
 }
 
 .header-content h1 {
-    font-size: 75px;
+    font-size: 64px;
     color: #FFFFFF;
 }
 
@@ -76,17 +95,16 @@ nav {
 .email-container {
     padding: 10px 10px 10px 20px;
     background-color: #FFFFFF;
-    width: 700px;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
 }
 
-.email-container img {
-    vertical-align: middle;
-}
 
 .email-container input {
     outline: none;
     border: none;
-    width: 300px;
+    flex-basis: 50%;
 }
 
 .email-container input::placeholder {
@@ -105,13 +123,12 @@ nav {
     cursor: pointer;
 }
 
+
 .email-container .btn {
-    margin-left: 200px;
+    margin-left: auto;
+    flex-basis: 35%;
 }
 
-.section {
-    padding: 75px 300px;
-}
 
 .section-heading {
     text-align: center;
@@ -122,10 +139,9 @@ nav {
 .figures {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 50px 0;
-    padding: 0 200px;
 }
 
 .figure h2, .figure p {
@@ -137,24 +153,25 @@ nav {
     font-size: 40px;
 }
 
+.analytics-image {
+    text-align: center;
+}
+
 .analytics-image img {
-    width: 100%;
+    width: 80%
 }
 
 .solution {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 75px 0;
+    margin: 50px 0;
+    column-gap: 50px;
 }
 
-.solution div {
-    width: 50%;
-}
-
-.solution div:last-child {
-    padding-left: 50px;
+.solution-content {
+    flex-basis: 40%;
 }
 
 .solution-content h2 {
@@ -167,7 +184,8 @@ nav {
 }
 
 .solution-image img{
-    width: 100%;
+    width: 700px;
+    max-width: 100%;
 }
 
 .team-heading {
@@ -175,11 +193,12 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0 ;
+    margin: 25px 0;
 }
 
 .team-heading h1 {
     font-size: 50px;
+    margin-right: 20px;
 }
 
 .team-heading p {
@@ -192,17 +211,23 @@ nav {
 
 .team-cards {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 75px;
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
 }
 
 .team-card h3 {
     margin: 20px 0;
 }
 
+.team-card {
+    width: 300px;
+    max-width: 100%;
+    margin-top: 50px;
+}
+
 .image img{
-    height: 500px;
+    width: 100%;
 }
 
 .team-action {
@@ -214,27 +239,31 @@ footer {
     background-color: #10181d;
 }
 
-.social-media {
-    float: right;
-}
-
 .upper-footer {
     height: 100px;
     border-bottom: 1px solid #2b3338;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
 .footer-lists {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
-    padding: 25px 0;
+    flex-wrap: wrap;
 }
 
 .footer-list h4 {
     color: #FFFFFF;
     font-size: 16px;
+}
+
+.footer-list {
+    margin: 25px;
+    flex-basis: 200px;
 }
 
 .footer-list ul{
@@ -251,4 +280,125 @@ footer {
 
 .item:hover {
     font-weight: 600;
+}
+
+@media only screen and (max-width: 1280px) {
+    .nav-list ul {
+        display: none;
+    }
+    .nav-list {
+        float: none;
+        margin-top: 0;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar .logo {
+        margin-top: 0;
+    }
+    .solution {
+        column-gap: 20px;
+    }
+
+    .header-content {
+        flex-basis: 50%;
+    }
+
+    .header-content h1 {
+        font-size: 48px;
+    }
+
+    .solution-content, .solution-image {
+        flex-basis: 50%;
+    }
+
+    .solution-content h2 ,.team-heading h1 {
+        font-size: 36px;
+    }
+
+    .solution-content p, .team-heading p, .header-content p {
+        font-size: 18px;
+    }
+
+    .team-cards {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .solution,.header-section {
+        flex-direction: column-reverse;
+    }
+
+    .header-content {
+        margin-left: 0;
+        margin-top: 50px;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .solution-content, .team-heading {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .solution:nth-child(3), .team-heading {
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-btn {
+        margin-left: 0;
+        padding: 5px 20px;
+    }
+    
+    .figures h2 {
+        font-size: 18px;
+    }
+
+    .figures p{
+        font-size: 12px;
+    }
+
+    .header-content {
+        flex-basis: 100%;
+    }
+
+    .header-content h1 {
+        font-size: 32px;
+    }
+
+    .solution-content, .solution-image {
+        flex-basis: 100%;
+    }
+
+    .solution-content h2 ,.team-heading h1 {
+        font-size: 28px;
+    }
+
+    .solution-content p, .team-heading p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .upper-footer  {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+    }
+
+    .footer-lists {
+        justify-content: center;
+    }
+
+    .footer-list {
+        flex-basis: 40%;
+        text-align: center;
+    }
+
 }
